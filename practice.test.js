@@ -75,3 +75,4 @@ test("An analyzeArray function that takes an array of numbers and returns an obj
 test("An analyzeArray function that takes an array of numbers and returns an object with the following properties: average, min, max, and length.", () => {
     expect(practice.analyseArray([-1,-1,1,1])).toBe({average: 0, min: -1, max: 1, length: 4});
 });
+
