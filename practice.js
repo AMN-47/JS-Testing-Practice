@@ -8,10 +8,14 @@ function reverseString(str) {
 
 const calculator = (() => {
     const add = (a, b) => a + b;
+    const sub = (a, b) => a - b;
+    const mul = (a, b) => a * b;
     return {
-        add
+        add,
+        sub,
+        mul,
     };
-}) ();
+})();
 
 module.exports.capitalize = capitalize;
 module.exports.reverseString = reverseString;
