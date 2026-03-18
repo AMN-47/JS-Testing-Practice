@@ -19,6 +19,11 @@ const calculator = (() => {
     };
 })();
 
+function ceaserCipher (str) {
+    const letters = "abcdefghijklmnopqrstuvwxyz";
+    const cipher = "bcdefghijklmnopqrstuvwxyza";
+}
+
 module.exports.capitalize = capitalize;
 module.exports.reverseString = reverseString;
 module.exports.calculator = calculator;
