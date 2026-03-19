@@ -46,8 +46,26 @@ function ceaserCipher (str) {
     if (typeof str !== "string") {
         return "not a string";
     }
+
+    let cipherOutput = ""; //Sets output of current output to blank, next for loop encrypts and fills each letter with encrypted one
+
+    for (let i = 0; i < str.length; i++) {
+        if (isUpperCase(str[i]) || isLowerCase(str[i])) {
+            if (isLowerCase(str[i])) {
+                cipherOutput += lowerCipher(str[i]);
+            } else if (isUpperCase(str[i])){
+                cipherOutput += lowerCipher(str[i].toLowerCase()).toUpperCase();
+            }
+        } else {
+            cipherOutput += str[i];
+        }
+    }
+
+    return cipherOutput;
+
 }
 
 module.exports.capitalize = capitalize;
 module.exports.reverseString = reverseString;
 module.exports.calculator = calculator;
+module.exports.ceaserCipher = ceaserCipher;
