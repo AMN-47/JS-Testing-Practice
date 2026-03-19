@@ -61,18 +61,18 @@ object == {
 };
 */ 
 test("An analyzeArray function that takes an array of numbers and returns an object with the following properties: average, min, max, and length.", () => {
-    expect(practice.analyseArray([1,8,3,4,2,6])).toBe({average: 4, min: 1, max: 8, length: 6});
+    expect(practice.analyseArray([1,8,3,4,2,6])).toStrictEqual({average: 4, min: 1, max: 8, length: 6});
 });
 
 test("An analyzeArray function that takes an array of numbers and returns an object with the following properties: average, min, max, and length.", () => {
-    expect(practice.analyseArray([1,1,1])).toBe({average: 1, min: 1, max: 1, length: 3});
+    expect(practice.analyseArray([1,1,1])).toStrictEqual({average: 1, min: 1, max: 1, length: 3});
 });
 
 test("An analyzeArray function that takes an array of numbers and returns an object with the following properties: average, min, max, and length.", () => {
-    expect(practice.analyseArray([0])).toBe({average: 0, min: 0, max: 0, length: 1});
+    expect(practice.analyseArray([0])).toStrictEqual({average: 0, min: 0, max: 0, length: 1});
 }); 
 
 test("An analyzeArray function that takes an array of numbers and returns an object with the following properties: average, min, max, and length.", () => {
-    expect(practice.analyseArray([-1,-1,1,1])).toBe({average: 0, min: -1, max: 1, length: 4});
+    expect(practice.analyseArray([-1,-1,1,1])).toStrictEqual({average: 0, min: -1, max: 1, length: 4});
 });
 

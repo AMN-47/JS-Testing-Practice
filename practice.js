@@ -65,7 +65,24 @@ function ceaserCipher (str) {
 
 }
 
+function analyseArray (inputArray) {
+    const avg = inputArray.reduce((a, b) => a + b) / inputArray.length;
+    const minimum = Math.min(...inputArray);
+    const maximum = Math.max(...inputArray);
+    const len = inputArray.length;
+
+    const OutputObject = {
+        average: avg,
+        min: minimum,
+        max: maximum,
+        length: len,
+    };
+    return OutputObject;
+}
+
+
 module.exports.capitalize = capitalize;
 module.exports.reverseString = reverseString;
 module.exports.calculator = calculator;
 module.exports.ceaserCipher = ceaserCipher;
+module.exports.analyseArray = analyseArray;
