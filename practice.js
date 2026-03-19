@@ -37,7 +37,15 @@ function ceaserCipher (str) {
         return false;
     };
 
-    
+    const lowerCipher = (letter) => {
+        const index = letters.indexOf(letter);
+        let cipherCharacter = cipher[index];
+        return cipherCharacter;
+    };
+
+    if (typeof str !== "string") {
+        return "not a string";
+    }
 }
 
 module.exports.capitalize = capitalize;
