@@ -22,6 +22,22 @@ const calculator = (() => {
 function ceaserCipher (str) {
     const letters = "abcdefghijklmnopqrstuvwxyz";
     const cipher = "bcdefghijklmnopqrstuvwxyza";
+
+    const isLowerCase = (letter) => {
+        if (letter == letter.toLowerCase() && letter!= letter.toUpperCase()) {
+            return true;
+        } 
+        return false;
+    };
+
+    const isUpperCase = (letter) => {
+        if (letter == letter.toUpperCase() && letter != letter.toLowerCase()) {
+            return true;
+        }
+        return false;
+    };
+
+    
 }
 
 module.exports.capitalize = capitalize;
